@@ -1,9 +1,14 @@
 package com.studentRegistration.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Student {
     private Long id;
+    @JsonProperty(value = "first_name")
     private String firstName;
+    @JsonProperty(value = "last_name")
     private String lastName;
+    @JsonProperty(value = "course_id")
     private Long courseId;
 
     public Student(Long id, String firstName, String lastName, Long courseId) {

@@ -14,7 +14,7 @@ public class CourseController {
     @Autowired
     CourseService courseService;
 
-    @PostMapping(value = "/create}")
+    @PostMapping(value = "/create")
     @CrossOrigin
     public Long createCourse(@RequestBody Course course){
        return courseService.createCourse(course);
